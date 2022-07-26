@@ -7,6 +7,12 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MainDisplayComponent } from './main-display/main-display.component';
 import { ApiService } from './api.service';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -17,7 +23,13 @@ import { ApiService } from './api.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatCardModule,
   ],
   providers: [ ApiService ],
   bootstrap: [AppComponent]

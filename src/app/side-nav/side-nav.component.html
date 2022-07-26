@@ -1,1 +1,28 @@
-<p>side-nav works!</p>
+<mat-drawer-container class="example-container">
+    <mat-drawer class="drawer" mode="side" opened>
+        <div class="cards">
+            <mat-card >
+                <mat-card-title>Location</mat-card-title>
+                <mat-card-subtitle>Zipcode</mat-card-subtitle>
+                <mat-card-actions>
+                  <button mat-button>Submit</button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+
+        <div class="cards">
+            <mat-card class="cards">
+                <mat-card-title>Options</mat-card-title>
+                <mat-card-subtitle>Select options below</mat-card-subtitle>
+                <mat-card-actions>
+                  <button mat-button>Submit</button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-main-display></app-main-display>
+    </mat-drawer-content>
+</mat-drawer-container>
+  
